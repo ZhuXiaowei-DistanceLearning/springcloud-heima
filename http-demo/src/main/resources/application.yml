@@ -1,0 +1,26 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+#    是否优先使用服务地址
+    prefer-ip-address: true
+#    该实例服务地址
+    ip-address: 127.0.0.1
+spring:
+  application:
+    name: consumer-demo
+
+server:
+  port: 8081
+
+feign:
+  hystrix:
+    enabled: true # 开启Feign的熔断功能
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 4000

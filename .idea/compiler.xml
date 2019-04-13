@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="http-demo" />
+        <module name="userservice" />
+        <module name="eurekeservcer" />
+        <module name="getway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eurekeservcer" target="1.8" />
+      <module name="getway" target="1.8" />
+      <module name="http-demo" target="1.8" />
+      <module name="springboot-text" target="1.8" />
+      <module name="springcould-heima" target="1.8" />
+      <module name="userservice" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eurekeservcer" options="-parameters" />
+      <module name="getway" options="-parameters" />
+      <module name="http-demo" options="-parameters" />
+      <module name="springboot-text" options="-parameters" />
+      <module name="userservice" options="-parameters" />
+    </option>
+  </component>
+</project>
